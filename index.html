@@ -2,21 +2,28 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-   <title>Ejemplo 4.</title>
+   <title>Ejemplo html</title>
 <style type="text/css">
-   h1 { font-family: verdana; text-align: center; color: purple; }
-   p { font: 1.2em arial; color: navy; padding:0.3em 3em  }
+   h1 { font-family: helvetica; text-align: center; color: yellow; }
+   p { font: 1.2em helvetica; color: navy; padding:0.3em 3em  }
 </style>
 </head>
 <body>
-   <h1>Presentación con javascript</h1>
+   <h1>Mi ejemplo HTML</h1>
    <script language="javascript">
-      var presentacion = "Hola, bienvenido a mi página"
+      var presentacion = "Hola, bienvenido o bienvenidia a mi página"
       var pregunta =  "¿Cómo te llamas?"
       alert(presentacion)
       var a = prompt(pregunta)
       document.write("<p>hola " + a + "</p>")
    </script>
-   <p>Encantado de conocerte</p>
+   <p>Encantada de conocerte</p>
+   <h1>Texto con caracteres especiales: </h1>
+   <p>Al pulsar en los siguientes elementos de la lista aparecerán 
+      mensajes con caracteres especiales:</p>
+   <ul>
+     <li onclick='alert("texto con \"comillas dobles\"")'>Espero estes bien</li>
+     <li onclick="alert('texto con \'comillas simples\'')">Ten un buen día</li>
+     <li onclick="alert('texto \n con \n saltos \n de \n línea')">Mantente informado de la pandemia</li> 
 </body>
 </html>
